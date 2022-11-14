@@ -1,7 +1,12 @@
 import "../scss/main.scss";
+import Layout from "../Layout/Layout";
 
 const App = (): JSX.Element => {
-  return <div>App</div>;
+  return (
+    <div>
+      <Layout />
+    </div>
+  );
 };
 
 export default App;
