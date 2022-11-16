@@ -13,7 +13,7 @@ const Layout = (): JSX.Element => {
       </div>
       <div className="layout__column">
         <div className="layout__row">1</div>
-        <div className="layout__row">2</div>
+        <div className="layout__row"></div>
         <div className="layout__row">3</div>
       </div>
       <div className="layout__column">

@@ -1,21 +1,31 @@
+@import "../scss/variables.scss";
+
 .layout {
   width: 100%;
   height: 100vh;
-  background-color: #b07732;
+  background-color: $default_brown_background;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   gap: 1px;
+  color: $default_brown_background;
   &__column {
-    background-color: white;
-    height: auto;
     &:first-child,
     &:last-child {
       display: grid;
       grid-template-rows: 1fr 2fr 2fr 2fr 2fr 1fr;
+      justify-content: center;
+      align-items: center;
+      gap: 1px;
+      row-gap: 10px;
+      background-color: $default_white_font;
     }
     &:nth-child(2) {
       display: grid;
       grid-template-rows: 1fr 8fr 1fr;
+      justify-content: center;
+      align-items: center;
+      gap: 1px;
+      background-color: $default_white_font;
     }
   }
 }
