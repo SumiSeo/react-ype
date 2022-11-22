@@ -32,14 +32,10 @@
 .layout {
   width: 100%;
   height: 100vh;
-  background-color: $default_white_font;
-  gap: 1px;
   display: flex;
   color: $default_brown_background;
-
   &__column {
     height: 100vh;
-
     &:first-child,
     &:last-child {
       height: 100vh;
@@ -56,6 +52,31 @@
       animation: slidedown 1s ease-in forwards;
       width: 1px;
       background-color: $default_brown_background;
+    }
+  }
+  &__row {
+    &:first-child {
+      height: 8%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid $default_brown_background;
+    }
+    &:nth-child(2),
+    &:nth-child(4) {
+      width: 100%;
+      height: 1px;
+      // background-color: $default_brown_background;
+    }
+    &:nth-child(3) {
+      width: 100%;
+      height: 84%;
+    }
+    &:last-child {
+      height: 8%;
+      width: 100%;
+      border-top: 1px solid $default_brown_background;
     }
   }
 }

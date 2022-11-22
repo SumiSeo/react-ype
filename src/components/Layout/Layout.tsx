@@ -26,11 +26,29 @@ const Layout = (): JSX.Element => {
     //   </div>
     // </div>
     <div className="layout">
+      <div className="layout__column">
+        <div className="layout__row">SUMI SEO</div>
+        <div className="layout__row"></div>
+        <div className="layout__row"></div>
+        <div className="layout__row"></div>
+        <div className="layout__row"></div>
+      </div>
       <div className="layout__column"></div>
+      <div className="layout__column">
+        <div className="layout__row"></div>
+        <div className="layout__row"></div>
+        <div className="layout__row"></div>
+        <div className="layout__row"></div>
+        <div className="layout__row"></div>
+      </div>
       <div className="layout__column"></div>
-      <div className="layout__column"></div>
-      <div className="layout__column"></div>
-      <div className="layout__column"></div>
+      <div className="layout__column">
+        <div className="layout__row">MENU</div>
+        <div className="layout__row"></div>
+        <div className="layout__row"></div>
+        <div className="layout__row"></div>
+        <div className="layout__row"></div>
+      </div>
     </div>
   );
 };
