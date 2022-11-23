@@ -5,11 +5,11 @@ const Layout = (): JSX.Element => {
     <div className="layout">
       <div className="layout__column">
         <div className="layout__row">SUMI SEO</div>
-        <div className="layout__row layout__row--content">1</div>
-        <div className="layout__row layout__row--content">2</div>
-        <div className="layout__row layout__row--content">3</div>
-        <div className="layout__row layout__row--content">4</div>
-        <div className="layout__row layout__row--content">5</div>
+        <div className="layout__row layout__row--content">#10</div>
+        <div className="layout__row layout__row--content">#9</div>
+        <div className="layout__row layout__row--content">#8</div>
+        <div className="layout__row layout__row--content">#7</div>
+        <div className="layout__row layout__row--content">#6</div>
         <div className="layout__row "></div>
       </div>
       <div className="layout__column">
@@ -19,11 +19,11 @@ const Layout = (): JSX.Element => {
       </div>
       <div className="layout__column">
         <div className="layout__row">MENU</div>
-        <div className="layout__row layout__row--content">1</div>
-        <div className="layout__row layout__row--content">2</div>
-        <div className="layout__row layout__row--content">3</div>
-        <div className="layout__row layout__row--content">4</div>
-        <div className="layout__row layout__row--content">5</div>
+        <div className="layout__row layout__row--content">#5</div>
+        <div className="layout__row layout__row--content">#4</div>
+        <div className="layout__row layout__row--content">#3</div>
+        <div className="layout__row layout__row--content">#2</div>
+        <div className="layout__row layout__row--content">#1</div>
         <div className="layout__row "></div>
       </div>
     </div>

@@ -28,6 +28,8 @@
   }
   &__row {
     &:first-child {
+      font-size: 1.3rem;
+      font-weight: 300;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -43,6 +45,11 @@
       height: 100%;
     }
     &--content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.1rem;
+      font-weight: 400;
       border-bottom: 1px solid $default_brown_background;
     }
   }
