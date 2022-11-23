@@ -15,7 +15,14 @@ const Layout = (): JSX.Element => {
       <div className="layout__column">
         <div className="layout__row"></div>
         <div className="layout__row layout__row--content"></div>
-        <div className="layout__row">Hello@ </div>
+        <div className="layout__row layout__row--footer">
+          <span>
+            • sumi seo • software engineer • frontend developer • react •
+            typescript • graphql • sumi seo • software engineer • frontend
+            developer • react • typescript • graphql • sumi seo • software
+            engineer • frontend developer • react • typescript • graphql •
+          </span>
+        </div>
       </div>
       <div className="layout__column">
         <div className="layout__row">MENU</div>
