@@ -27,7 +27,7 @@ const Layout = (): JSX.Element => {
         </div>
       </div>
       <div className="layout__column">
-        <div className="layout__row">MENU</div>
+        <div className="layout__row layout__row--content">MENU</div>
         <div className="layout__row layout__row--content">#5</div>
         <div className="layout__row layout__row--content">#4</div>
         <div className="layout__row layout__row--content">#3</div>
