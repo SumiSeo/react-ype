@@ -18,9 +18,11 @@ const Layout = (): JSX.Element => {
         <div className="layout__row layout__row--footer">
           <span>
             • sumi seo • software engineer • frontend developer • react •
-            typescript • graphql • sumi seo • software engineer • frontend
-            developer • react • typescript • graphql • sumi seo • software
-            engineer • frontend developer • react • typescript • graphql •
+            typescript • graphql • scss • javascript(es6+) • flutter • aws •
+            sumi seo • dedicated software engineer • frontend developer • react
+            • typescript • graphql • scss • javascript(es6+) • flutter • aws •
+            sumi seo • dedicated software engineer • frontend developer • react
+            • typescript • graphql • scss • javascript(es6+) • flutter • aws
           </span>
         </div>
       </div>

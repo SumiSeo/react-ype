@@ -51,6 +51,11 @@
       font-size: 1.1rem;
       font-weight: 400;
       border-bottom: 1px solid $default_brown_background;
+      &:hover {
+        background-color: $default_brown_background;
+        color: $default_white_font;
+        transition: 0.4s ease-in-out;
+      }
     }
     &--footer {
       white-space: nowrap;
@@ -60,7 +65,7 @@
         font-weight: 300;
         text-transform: uppercase;
 
-        animation: rightToLeft 6s linear infinite forwards;
+        animation: rightToLeft 10s linear infinite forwards;
       }
     }
   }
@@ -78,11 +83,11 @@
 
 @keyframes rightToLeft {
   0% {
-    transform: translateX(150px);
+    transform: translateX(300px);
   }
 
   100% {
-    transform: translateX(-150px);
+    transform: translateX(-1000px);
   }
 }
 @keyframes slidedRight {
