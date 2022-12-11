@@ -4,16 +4,20 @@ import "./Layout.scss";
 const Layout = (): JSX.Element => {
   const left = ["#10", "#9", "#8", "#7", "#6"];
   const right = ["#5", "#4", "#3", "#2", "#1"];
+  const profile =
+    " • sumi seo • software engineer • frontend developer • react •typescript • graphql • scss • javascript(es6+) • flutter • aws • sumi seo • dedicated software engineer • frontend developer • react • typescript • graphql • scss • javascript(es6+) • flutter • aws • sumi seo • dedicated software engineer • frontend developer • react• typescript • graphql • scss • javascript(es6+) • flutter • aws";
 
   return (
     <div className="layout">
       <div className="layout__column">
         <div className="layout__row">SUMI SEO</div>
-        <div className="layout__row layout__row--content">#10</div>
-        <div className="layout__row layout__row--content">#9</div>
-        <div className="layout__row layout__row--content">#8</div>
-        <div className="layout__row layout__row--content">#7</div>
-        <div className="layout__row layout__row--content">#6</div>
+        {left.map((name) => {
+          return (
+            <div key={name} className="layout__row layout__row--content">
+              {name}
+            </div>
+          );
+        })}
         <div className="layout__row "></div>
       </div>
       <div className="layout__column">
@@ -22,23 +26,18 @@ const Layout = (): JSX.Element => {
           <MainBlockComp />
         </div>
         <div className="layout__row layout__row--footer">
-          <span>
-            • sumi seo • software engineer • frontend developer • react •
-            typescript • graphql • scss • javascript(es6+) • flutter • aws •
-            sumi seo • dedicated software engineer • frontend developer • react
-            • typescript • graphql • scss • javascript(es6+) • flutter • aws •
-            sumi seo • dedicated software engineer • frontend developer • react
-            • typescript • graphql • scss • javascript(es6+) • flutter • aws
-          </span>
+          <span>{profile}</span>
         </div>
       </div>
       <div className="layout__column">
         <div className="layout__row layout__row--content">MENU</div>
-        <div className="layout__row layout__row--content">#5</div>
-        <div className="layout__row layout__row--content">#4</div>
-        <div className="layout__row layout__row--content">#3</div>
-        <div className="layout__row layout__row--content">#2</div>
-        <div className="layout__row layout__row--content">#1</div>
+        {right.map((name) => {
+          return (
+            <div key={name} className="layout__row layout__row--content">
+              {name}
+            </div>
+          );
+        })}
         <div className="layout__row "></div>
       </div>
     </div>
