@@ -8,7 +8,7 @@ const ErrorPage = () => {
   return (
     <div>
       <div id="error-page">
-        <video autoPlay muted loop>
+        <video className="error-page__video" autoPlay muted loop>
           <source src={video} type="video/mp4" />
         </video>
       </div>
