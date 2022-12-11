@@ -13,17 +13,17 @@
       grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 1fr;
       border-right: 1px solid $default_brown_background;
       border-left: 1px solid $default_brown_background;
-      transform: translateY(-90rem);
+      // transform: translateY(-90rem);
       height: 100vh;
-      animation: slidedown 1s ease-in forwards;
+      // animation: slidedown 1s ease-in forwards;
     }
     &:nth-child(2) {
       display: grid;
       grid-template-rows: 1fr 10fr 1fr;
       background-color: $default_white_font;
-      transform: translateY(-90rem);
+      // transform: translateY(-90rem);
       height: 100vh;
-      animation: slidedown 1s ease-in forwards;
+      // animation: slidedown 1s ease-in forwards;
     }
   }
   &__row {

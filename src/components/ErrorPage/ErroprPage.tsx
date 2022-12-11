@@ -1,4 +1,6 @@
 import { useRouteError } from "react-router-dom";
+import video from "../video/passing.mp4";
+import "./ErrorPage.scss";
 
 const ErrorPage = () => {
   const error = useRouteError();
@@ -6,9 +8,9 @@ const ErrorPage = () => {
   return (
     <div>
       <div id="error-page">
-        <h1>Oops!</h1>
-        <p>Sorry, an unexpected error has occurred.</p>
-        <p>{/* <i>{error?.statusText || error?.message}</i> */}</p>
+        <video controls autoPlay>
+          <source src={video} type="video/mp4" />
+        </video>
       </div>
     </div>
   );
