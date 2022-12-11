@@ -1,6 +1,10 @@
+import MainBlockComp from "../MainBlockComp/MainBlockComp";
 import "./Layout.scss";
 
 const Layout = (): JSX.Element => {
+  const left = ["#10", "#9", "#8", "#7", "#6"];
+  const right = ["#5", "#4", "#3", "#2", "#1"];
+
   return (
     <div className="layout">
       <div className="layout__column">
@@ -14,7 +18,9 @@ const Layout = (): JSX.Element => {
       </div>
       <div className="layout__column">
         <div className="layout__row"></div>
-        <div className="layout__row layout__row--content"></div>
+        <div className="layout__row layout__row--content layout__main">
+          <MainBlockComp />
+        </div>
         <div className="layout__row layout__row--footer">
           <span>
             • sumi seo • software engineer • frontend developer • react •
