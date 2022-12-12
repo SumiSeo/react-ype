@@ -1,15 +1,41 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import MainBlockComp from "../MainBlockComp/MainBlockComp";
 import "./Layout.scss";
 
 const Layout = (): JSX.Element => {
   const [right, setRight] = useState<string[]>(["#5", "#4", "#3", "#2", "#1"]);
-  const left = ["#10", "#9", "#8", "#7", "#6"];
+  const [left, setLeft] = useState<string[]>(["#10", "#9", "#8", "#7", "#6"]);
 
   const profile =
     " • sumi seo • software engineer • frontend developer • react •typescript • graphql • scss • javascript(es6+) • flutter • aws • sumi seo • dedicated software engineer • frontend developer • react • typescript • graphql • scss • javascript(es6+) • flutter • aws • sumi seo • dedicated software engineer • frontend developer • react• typescript • graphql • scss • javascript(es6+) • flutter • aws";
 
-  const onMouseOver = (i: number) => {
+  const onMouseOut = () => {
+    setLeft(["#10", "#9", "#8", "#7", "#6"]);
+    setRight(["#5", "#4", "#3", "#2", "#1"]);
+  };
+
+  const onMouseOverLeft = (i: number) => {
+    switch (i) {
+      case 0:
+        setLeft(["LinkedIn", "#9", "#8", "#7", "#6"]);
+        break;
+      case 1:
+        setLeft(["#10", "GitHub", "#8", "#7", "#6"]);
+        break;
+      case 2:
+        setLeft(["#10", "#9", "Mobile", "#7", "#6"]);
+        break;
+      case 3:
+        setLeft(["#10", "#9", "#8", "Email", "#6"]);
+        break;
+      case 4:
+        setLeft(["#10", "#9", "#8", "#7", "Flutter"]);
+        break;
+      default:
+        setLeft([...left]);
+    }
+  };
+  const onMouseOverRight = (i: number) => {
     switch (i) {
       case 0:
         setRight(["SCSS", "#4", "#3", "#2", "#1"]);
@@ -31,20 +57,18 @@ const Layout = (): JSX.Element => {
     }
   };
 
-  const onMouseOut = (e: React.MouseEvent<HTMLLIElement>) => {
-    console.log(e);
-    console.log("mouse out");
-    //select correct event of list and change it when it is hover
-    setRight(["#5", "#4", "#3", "#2", "#1"]);
-  };
-
   return (
     <div className="layout">
       <div className="layout__column">
         <div className="layout__row">SUMI SEO</div>
-        {left.map((name) => {
+        {left.map((name, i) => {
           return (
-            <li key={name} className="layout__row layout__row--content">
+            <li
+              onMouseOut={onMouseOut}
+              onMouseOver={() => onMouseOverLeft(i)}
+              key={name}
+              className="layout__row layout__row--content"
+            >
               {name}
             </li>
           );
@@ -66,7 +90,7 @@ const Layout = (): JSX.Element => {
           return (
             <li
               onMouseOut={onMouseOut}
-              onMouseOver={() => onMouseOver(i)}
+              onMouseOver={() => onMouseOverRight(i)}
               key={name}
               className="layout__row layout__row--content"
             >
