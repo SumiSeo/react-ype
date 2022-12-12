@@ -13,17 +13,13 @@
       grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 1fr;
       border-right: 1px solid $default_brown_background;
       border-left: 1px solid $default_brown_background;
-      // transform: translateY(-90rem);
       height: 100vh;
-      // animation: slidedown 1s ease-in forwards;
     }
     &:nth-child(2) {
       display: grid;
       grid-template-rows: 1fr 10fr 1fr;
       background-color: $default_white_font;
-      // transform: translateY(-90rem);
       height: 100vh;
-      // animation: slidedown 1s ease-in forwards;
     }
   }
   &__row {
@@ -55,7 +51,7 @@
       &:hover {
         background-color: $default_brown_background;
         color: $default_white_font;
-        transition: 0.4s ease-in-out;
+        transition: 0.3s ease-in-out;
       }
     }
     &--footer {
@@ -71,45 +67,5 @@
   }
   &__main {
     overflow: hidden;
-  }
-}
-
-@keyframes slidedown {
-  50% {
-    transform: translateY(-45rem);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes rightToLeft {
-  0% {
-    transform: translateX(300px);
-  }
-
-  100% {
-    transform: translateX(-1000px);
-  }
-}
-@keyframes slidedRight {
-  50% {
-    transform: translateX(-45rem);
-  }
-
-  100% {
-    transform: translateX(-0rem);
-  }
-}
-
-@-webkit-keyframes run {
-  0% {
-    left: 0;
-    transform: translateX(-50rem);
-  }
-  100% {
-    left: 100%;
-    transform: translateX(0);
   }
 }

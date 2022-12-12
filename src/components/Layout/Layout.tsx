@@ -9,10 +9,10 @@ const Layout = (): JSX.Element => {
   const profile =
     " • sumi seo • software engineer • frontend developer • react •typescript • graphql • scss • javascript(es6+) • flutter • aws • sumi seo • dedicated software engineer • frontend developer • react • typescript • graphql • scss • javascript(es6+) • flutter • aws • sumi seo • dedicated software engineer • frontend developer • react• typescript • graphql • scss • javascript(es6+) • flutter • aws";
 
-  const onMouseOver = (name: string, i: number) => {
+  const onMouseOver = (i: number) => {
     switch (i) {
       case 0:
-        setRight(["React", "#4", "#3", "#2", "#1"]);
+        setRight(["SCSS", "#4", "#3", "#2", "#1"]);
         break;
       case 1:
         setRight(["#5", "JavaScript/RestAPI", "#3", "#2", "#1"]);
@@ -24,7 +24,7 @@ const Layout = (): JSX.Element => {
         setRight(["#5", "#4", "#3", "TypeScript", "#1"]);
         break;
       case 4:
-        setRight(["#5", "#4", "#3", "#2", "SCSS"]);
+        setRight(["#5", "#4", "#3", "#2", "React"]);
         break;
       default:
         setRight([...right]);
@@ -66,7 +66,7 @@ const Layout = (): JSX.Element => {
           return (
             <li
               onMouseOut={onMouseOut}
-              onMouseOver={() => onMouseOver(name, i)}
+              onMouseOver={() => onMouseOver(i)}
               key={name}
               className="layout__row layout__row--content"
             >
