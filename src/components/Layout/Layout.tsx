@@ -85,7 +85,7 @@ const Layout = (): JSX.Element => {
         </div>
       </div>
       <div className="layout__column">
-        <div className="layout__row layout__row--content">MENU</div>
+        <div className="layout__row layout__row--content">ABOUT</div>
         {right.map((name, i) => {
           return (
             <li
