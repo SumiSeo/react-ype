@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import MainBlockComp from "../MainBlockComp/MainBlockComp";
 import "./Layout.scss";
+import Title from "../Title/Title";
 
 const Layout = (): JSX.Element => {
   const [right, setRight] = useState<string[]>(["#5", "#4", "#3", "#2", "#1"]);
@@ -78,7 +79,7 @@ const Layout = (): JSX.Element => {
       <div className="layout__column">
         <div className="layout__row"></div>
         <div className="layout__row layout__row--content layout__main">
-          <h1 className="layout__title">hi</h1>
+          <Title />
           <MainBlockComp />
         </div>
         <div className="layout__row layout__row--footer">
