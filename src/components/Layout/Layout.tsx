@@ -78,6 +78,7 @@ const Layout = (): JSX.Element => {
       <div className="layout__column">
         <div className="layout__row"></div>
         <div className="layout__row layout__row--content layout__main">
+          <h1 className="layout__title">hi</h1>
           <MainBlockComp />
         </div>
         <div className="layout__row layout__row--footer">
