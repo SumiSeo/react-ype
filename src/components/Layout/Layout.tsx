@@ -1,3 +1,4 @@
+import React from "react";
 import MainBlockComp from "../MainBlockComp/MainBlockComp";
 import "./Layout.scss";
 
@@ -6,6 +7,9 @@ const Layout = (): JSX.Element => {
   const right = ["#5", "#4", "#3", "#2", "#1"];
   const profile =
     " • sumi seo • software engineer • frontend developer • react •typescript • graphql • scss • javascript(es6+) • flutter • aws • sumi seo • dedicated software engineer • frontend developer • react • typescript • graphql • scss • javascript(es6+) • flutter • aws • sumi seo • dedicated software engineer • frontend developer • react• typescript • graphql • scss • javascript(es6+) • flutter • aws";
+  const onMouseOver = (e: React.MouseEvent<HTMLLIElement>) => {
+    console.log(e);
+  };
 
   return (
     <div className="layout">
@@ -13,9 +17,9 @@ const Layout = (): JSX.Element => {
         <div className="layout__row">SUMI SEO</div>
         {left.map((name) => {
           return (
-            <div key={name} className="layout__row layout__row--content">
+            <li key={name} className="layout__row layout__row--content">
               {name}
-            </div>
+            </li>
           );
         })}
         <div className="layout__row "></div>
@@ -28,14 +32,19 @@ const Layout = (): JSX.Element => {
         <div className="layout__row layout__row--footer">
           <span>{profile}</span>
         </div>
+        4
       </div>
       <div className="layout__column">
         <div className="layout__row layout__row--content">MENU</div>
         {right.map((name) => {
           return (
-            <div key={name} className="layout__row layout__row--content">
+            <li
+              onMouseOver={onMouseOver}
+              key={name}
+              className="layout__row layout__row--content"
+            >
               {name}
-            </div>
+            </li>
           );
         })}
         <div className="layout__row "></div>
