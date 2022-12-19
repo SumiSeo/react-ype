@@ -1,4 +1,3 @@
-import "./BlockComp.scss";
 import MainBlockComp from "../MainBlockComp/MainBlockComp";
 import Title from "../Title/Title";
 
@@ -6,7 +5,8 @@ const BlockComp = () => {
   return (
     <>
       {/* <Title /> */}
-      <MainBlockComp />
+      {/* <MainBlockComp /> */}
+      <div>Git hub</div>
     </>
   );
 };

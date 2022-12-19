@@ -48,6 +48,8 @@
       font-weight: 400;
       border-bottom: 1px solid $default_brown_background;
       cursor: pointer;
+      text-decoration: none;
+      color: $default_brown_background;
       &:hover {
         background-color: $default_brown_background;
         color: $default_white_font;
@@ -69,16 +71,6 @@
     overflow: hidden;
     position: relative;
   }
-  &__title {
-    font-size: 7rem;
-    color: white;
-    opacity: 0.8;
-    z-index: 100;
-    position: absolute;
-    top: 0;
-    right: 0;
-    animation: bottomToTop 0.4s ease-in;
-  }
 }
 @keyframes rightToLeft {
   0% {
@@ -87,17 +79,5 @@
 
   100% {
     transform: translateX(-1000px);
-  }
-}
-
-@keyframes bottomToTop {
-  0% {
-    transform: translateY(0px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(-20px);
-    opacity: 0.8;
   }
 }

@@ -63,14 +63,15 @@ const Layout = (): JSX.Element => {
         <div className="layout__row">SUMI SEO</div>
         {left.map((name, i) => {
           return (
-            <li
+            <NavLink
+              to={name}
               onMouseOut={onMouseOut}
               onMouseOver={() => onMouseOverLeft(i)}
               key={name}
               className="layout__row layout__row--content"
             >
               {name}
-            </li>
+            </NavLink>
           );
         })}
         <div className="layout__row "></div>
@@ -88,14 +89,15 @@ const Layout = (): JSX.Element => {
         <div className="layout__row layout__row--content">ABOUT</div>
         {right.map((name, i) => {
           return (
-            <li
+            <NavLink
+              to={name}
               onMouseOut={onMouseOut}
               onMouseOver={() => onMouseOverRight(i)}
               key={name}
               className="layout__row layout__row--content"
             >
               {name}
-            </li>
+            </NavLink>
           );
         })}
         <div className="layout__row "></div>
