@@ -1,7 +1,7 @@
 import { useState } from "react";
-import MainBlockComp from "../MainBlockComp/MainBlockComp";
+import {NavLink,Outlet} from "react-router-dom";
 import "./Layout.scss";
-import Title from "../Title/Title";
+
 
 const Layout = (): JSX.Element => {
   const [right, setRight] = useState<string[]>(["#5", "#4", "#3", "#2", "#1"]);
@@ -79,8 +79,7 @@ const Layout = (): JSX.Element => {
       <div className="layout__column">
         <div className="layout__row"></div>
         <div className="layout__row layout__row--content layout__main">
-          <Title />
-          <MainBlockComp />
+          <Outlet/>
         </div>
         <div className="layout__row layout__row--footer">
           <span>{profile}</span>

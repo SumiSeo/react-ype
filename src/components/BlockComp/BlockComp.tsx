@@ -1,11 +1,14 @@
 import "./BlockComp.scss";
-
-//create on/off switch
-
-//create props to decide which image should be shown
+import MainBlockComp from "../MainBlockComp/MainBlockComp";
+import Title from "../Title/Title";
 
 const BlockComp = () => {
-  return <div>main block</div>;
+  return (
+  <> 
+    <Title />
+    <MainBlockComp />
+  </>)
+  ;
 };
 
 export default BlockComp;
