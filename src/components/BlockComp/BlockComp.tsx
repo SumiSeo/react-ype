@@ -4,11 +4,11 @@ import Title from "../Title/Title";
 
 const BlockComp = () => {
   return (
-  <> 
-    <Title />
-    <MainBlockComp />
-  </>)
-  ;
+    <>
+      {/* <Title /> */}
+      <MainBlockComp />
+    </>
+  );
 };
 
 export default BlockComp;
