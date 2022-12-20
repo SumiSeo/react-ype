@@ -60,7 +60,11 @@ const Layout = (): JSX.Element => {
   return (
     <div className="layout">
       <div className="layout__column">
-        <div className="layout__row">SUMI SEO</div>
+        <div className="layout__row">
+          <NavLink className="layout__name" to="/">
+            SUMI SEO
+          </NavLink>
+        </div>
         {left.map((name, i) => {
           return (
             <NavLink

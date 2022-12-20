@@ -71,6 +71,10 @@
     overflow: hidden;
     position: relative;
   }
+  &__name {
+    text-decoration: none;
+    color: $default_brown_background;
+  }
 }
 @keyframes rightToLeft {
   0% {

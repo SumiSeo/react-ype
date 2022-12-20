@@ -1,12 +1,13 @@
-import MainBlockComp from "../MainBlockComp/MainBlockComp";
 import Title from "../Title/Title";
+import video from "../video/raining.mp4";
 
 const BlockComp = () => {
   return (
     <>
-      {/* <Title /> */}
-      {/* <MainBlockComp /> */}
-      <div>Git hub</div>
+      <Title />
+      <video className="mainBlock__video" autoPlay muted loop>
+        <source src={video} type="video/mp4" />
+      </video>
     </>
   );
 };
