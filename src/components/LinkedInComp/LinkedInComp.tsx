@@ -2,7 +2,7 @@ import "./LinkedInComp.scss";
 import Title from "../Title/Title";
 import video from "../video/listening.mp4";
 
-const BlockComp = () => {
+const LinkedInComp = () => {
   return (
     <>
       <Title />
@@ -15,4 +15,4 @@ const BlockComp = () => {
   );
 };
 
-export default BlockComp;
+export default LinkedInComp;
