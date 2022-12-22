@@ -1,10 +1,10 @@
 import Title from "../Title/Title";
-import video from "../video/home.mp4";
+import video from "../video/water.mp4";
 
 const MobileComp = () => {
   return (
     <>
-      <Title />
+      <Title arr="&#8594;" page="https://github.com/SumiSeo" />
       <div className="mainBlock__img">
         <video className="mainBlock__video" autoPlay muted loop>
           <source src={video} type="video/mp4" />

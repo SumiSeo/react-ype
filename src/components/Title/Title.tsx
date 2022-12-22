@@ -1,15 +1,15 @@
 import "./Title.scss";
+interface titleProps {
+  arr: string;
+  page: string;
+}
 
-const Title = (): JSX.Element => {
+const Title = ({ arr, page }: titleProps): JSX.Element => {
   return (
     <div>
       <h1 className="title">
-        <a
-          rel="noreferrer"
-          target="_blank"
-          href="https://www.linkedin.com/in/sumiseo/"
-        >
-          &#8594;
+        <a rel="noreferrer" target="_blank" href={page}>
+          {arr}
         </a>
       </h1>
     </div>
