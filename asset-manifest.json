@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-ype/static/css/main.a91508ca.css",
+    "main.js": "/react-ype/static/js/main.8f450c31.js",
+    "static/media/listening.mp4": "/react-ype/static/media/listening.58923a1b0c79b3d803db.mp4",
+    "static/media/weather2.mp4": "/react-ype/static/media/weather2.f697221bba53e3ab85e3.mp4",
+    "static/media/coffee.mp4": "/react-ype/static/media/coffee.2b9c1b355a56ab799bcc.mp4",
+    "static/media/water.mp4": "/react-ype/static/media/water.6bb094afc9f4ccc79d2b.mp4",
+    "static/media/raining.mp4": "/react-ype/static/media/raining.1bdcfb8e1475ca4fe628.mp4",
+    "static/media/passing.mp4": "/react-ype/static/media/passing.020a68b7c6d5995f5dbd.mp4",
+    "static/media/scss3.png": "/react-ype/static/media/scss3.550830500977b69c4db6.png",
+    "static/media/scss1.png": "/react-ype/static/media/scss1.dde05d504523c82e98bc.png",
+    "static/media/scss2.png": "/react-ype/static/media/scss2.49d1433fbb5f0cab7393.png",
+    "index.html": "/react-ype/index.html",
+    "main.a91508ca.css.map": "/react-ype/static/css/main.a91508ca.css.map",
+    "main.8f450c31.js.map": "/react-ype/static/js/main.8f450c31.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a91508ca.css",
+    "static/js/main.8f450c31.js"
+  ]
+}
