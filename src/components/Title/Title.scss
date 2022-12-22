@@ -42,6 +42,12 @@
   }
 }
 
+.arrow {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+
 @keyframes rightToLeft {
   0% {
     transform: translateX(200px);
