@@ -1,3 +1,5 @@
+@import "../scss/variables.scss";
+
 .title {
   color: white;
   opacity: 1;
@@ -5,22 +7,38 @@
   top: 50%;
   left: 50%;
   z-index: 100;
-  // animation: bottomToTop 0.4s ease-in;
+
   a {
     font-size: 1.5rem;
     text-decoration: none;
     color: white;
   }
+  &__div {
+    background-color: $default_brown_background;
+    height: auto;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    animation: rightToLeft 0.4s forwards;
+    a {
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: white;
+    }
+  }
 }
 
-@keyframes bottomToTop {
+@keyframes rightToLeft {
   0% {
-    transform: translateY(0px);
+    transform: translateX(200px);
     opacity: 0;
   }
 
   100% {
-    transform: translateY(-20px);
-    opacity: 0.8;
+    transform: translateX(0px);
+    opacity: 1;
   }
 }
