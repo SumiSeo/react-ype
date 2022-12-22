@@ -6,7 +6,6 @@ import {
   Route,
 } from "react-router-dom";
 import Layout from "../Layout/Layout";
-import ErrorPage from "../ErrorPage/ErroprPage";
 import LinkedInComp from "../LinkedInComp/LinkedInComp";
 import GitHubComp from "../GitHubComp/GitHubComp";
 import DefaultComp from "../DefaultComp/DefaultComp";

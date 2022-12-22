@@ -20,7 +20,7 @@ const Title = ({ arr, page, name }: titleProps): JSX.Element => {
           </a>
         ) : (
           <div onClick={addAnimation}>
-            <a href="#">{arr}</a>
+            <a>{arr}</a>
           </div>
         )}
       </h1>

@@ -12,7 +12,7 @@ const SCSSComp = () => {
     setInterval(() => {
       setImageIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
     }, 600);
-  }, []);
+  }, [images.length]);
   return (
     <>
       <h1 className="block__link">
