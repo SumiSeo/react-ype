@@ -22,6 +22,7 @@
     z-index: 100;
     width: 50%;
     height: 100%;
+    opacity: 0;
     animation: rightToLeft 0.4s forwards;
     a {
       font-size: 1.5rem;
@@ -29,16 +30,16 @@
       color: white;
     }
     h1 {
-      font-size: 7rem;
+      font-size: 2rem;
       text-align: left;
       font-family: inherit;
       white-space: pre-wrap;
-      line-height: 8rem;
     }
   }
-  // &__disappear {
-  //   animation: leftToRight 0.4s forwards;
-  // }
+  &__disappear {
+    opacity: 0;
+    animation: leftToRight 0.4s forwards;
+  }
 }
 
 @keyframes rightToLeft {
