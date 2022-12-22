@@ -20,7 +20,7 @@
     top: 0%;
     left: 50%;
     z-index: 100;
-    width: 100%;
+    width: 50%;
     height: 100%;
     animation: rightToLeft 0.4s forwards;
     a {
@@ -28,7 +28,17 @@
       text-decoration: none;
       color: white;
     }
+    h1 {
+      font-size: 7rem;
+      text-align: left;
+      font-family: inherit;
+      white-space: pre-wrap;
+      line-height: 8rem;
+    }
   }
+  // &__disappear {
+  //   animation: leftToRight 0.4s forwards;
+  // }
 }
 
 @keyframes rightToLeft {
@@ -39,6 +49,18 @@
 
   100% {
     transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes LeftToRight {
+  0% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(200px);
     opacity: 1;
   }
 }

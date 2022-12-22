@@ -9,7 +9,7 @@ interface titleProps {
 const Title = ({ arr, page, name }: titleProps): JSX.Element => {
   const [animation, setAnimation] = useState<boolean>(false);
   const addAnimation = () => {
-    setAnimation(!animation);
+    setAnimation(true);
   };
   return (
     <div>
@@ -25,7 +25,12 @@ const Title = ({ arr, page, name }: titleProps): JSX.Element => {
         )}
       </h1>
       {name === "mobile" ? (
-        <div className={animation ? "title__div" : ""}></div>
+        <div
+          onClick={() => setAnimation(false)}
+          className={animation ? "title__div" : "title__disappear"}
+        >
+          <h1>+33 7 67 23 49 82</h1>
+        </div>
       ) : (
         <div></div>
       )}
