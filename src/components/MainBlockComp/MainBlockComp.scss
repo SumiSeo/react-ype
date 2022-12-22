@@ -2,8 +2,7 @@
   &__img {
     overflow: hidden;
     img {
-      max-width: fit-content;
-      object-fit: contain;
+      object-fit: cover;
     }
   }
 }
