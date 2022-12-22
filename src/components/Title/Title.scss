@@ -23,7 +23,7 @@
     width: 50%;
     height: 100%;
     opacity: 0;
-    animation: rightToLeft2 0.4s forwards;
+    animation: rightToLeft 0.4s forwards;
     a {
       font-size: 1.5rem;
       text-decoration: none;
@@ -42,7 +42,7 @@
   }
 }
 
-@keyframes rightToLeft2 {
+@keyframes rightToLeft {
   0% {
     transform: translateX(200px);
     opacity: 0;

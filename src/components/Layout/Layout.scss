@@ -63,7 +63,7 @@
         font-size: 1.2rem;
         font-weight: 300;
         text-transform: uppercase;
-        animation: rightToLeft 15s linear infinite forwards;
+        animation: slide 15s linear infinite forwards;
       }
     }
   }
@@ -76,7 +76,7 @@
     color: $default_brown_background;
   }
 }
-@keyframes rightToLeft {
+@keyframes slide {
   0% {
     transform: translateX(300px);
   }
