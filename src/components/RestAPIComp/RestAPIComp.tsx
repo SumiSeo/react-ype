@@ -1,7 +1,9 @@
 const RestAPIComp = () => {
   return (
     <>
-      <div className="mainBlock__img"></div>
+      <div className="mainBlock__img">
+        <img />
+      </div>
     </>
   );
 };
