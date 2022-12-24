@@ -17,13 +17,6 @@ const RestAPIComp = () => {
           <source src={video} type="video/mp4" />
         </video>
       </div>
-      <a
-        rel="noreferrer"
-        target="_blank"
-        href="https://sumiseo.github.io/weather-up/"
-      >
-        hi
-      </a>
     </>
   );
 };

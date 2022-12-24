@@ -14,7 +14,7 @@ import EmailComp from "../EmailComp/EmailComp";
 import FlutterComp from "../FlutterComp/FlutterComp";
 import TypescriptComp from "../TypescriptComp/TypescriptComp";
 import SCSSComp from "../SCSSComp/SCSSComp";
-import PHPComp from "../PHPComp/PHPComp";
+import JavascriptComp from "../JavascriptComp/JavascriptComp";
 import ReactComp from "../ReactComp/ReactComp";
 import RestAPIComp from "../RestAPIComp/RestAPIComp";
 
@@ -26,7 +26,7 @@ const router = createBrowserRouter(
       <Route path="/GitHub" element={<GitHubComp />} />
       <Route path="/Mobile" element={<MobileComp />} />
       <Route path="/Email" element={<EmailComp />} />
-      <Route path="/Php" element={<PHPComp />} />
+      <Route path="/Javascript" element={<JavascriptComp />} />
       <Route path="/Scss" element={<SCSSComp />} />
       <Route path="/React" element={<ReactComp />} />
       <Route path="/JavaScript&RestAPI" element={<RestAPIComp />} />
