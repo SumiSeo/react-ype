@@ -58,55 +58,60 @@ const Layout = (): JSX.Element => {
   };
 
   return (
-    <div className="layout">
-      <div className="layout__column">
-        <div className="layout__row">
-          <NavLink className="layout__name" to="/">
-            SUMI SEO
-          </NavLink>
-        </div>
-        {left.map((name, i) => {
-          return (
-            <NavLink
-              to={name}
-              onMouseOut={onMouseOut}
-              onMouseOver={() => onMouseOverLeft(i)}
-              key={name}
-              className="layout__row layout__row--content"
-            >
-              {name}
+    <>
+      {/* <div className="cursor"></div> */}
+      <div className="layout">
+        <div className="layout__column">
+          <div className="layout__row">
+            <NavLink to="/" end className="layout__name">
+              SUMI SEO
             </NavLink>
-          );
-        })}
-        <div className="layout__row "></div>
-      </div>
-      <div className="layout__column">
-        <div className="layout__row"></div>
-        <div className="layout__row layout__row--content layout__main">
-          <Outlet />
+          </div>
+          {left.map((name, i) => {
+            return (
+              <NavLink
+                to={name}
+                onMouseOut={onMouseOut}
+                onMouseOver={() => onMouseOverLeft(i)}
+                key={name}
+                end
+                className="layout__row layout__row--content"
+              >
+                {name}
+              </NavLink>
+            );
+          })}
+          <div className="layout__row "></div>
         </div>
-        <div className="layout__row layout__row--footer">
-          <span>{profile}</span>
+        <div className="layout__column">
+          <div className="layout__row"></div>
+          <div className="layout__row layout__row--content layout__main">
+            <Outlet />
+          </div>
+          <div className="layout__row layout__row--footer">
+            <span>{profile}</span>
+          </div>
+        </div>
+        <div className="layout__column">
+          <div className="layout__row layout__row--content">ABOUT</div>
+          {right.map((name, i) => {
+            return (
+              <NavLink
+                to={name}
+                end
+                onMouseOut={onMouseOut}
+                onMouseOver={() => onMouseOverRight(i)}
+                key={name}
+                className="layout__row layout__row--content"
+              >
+                {name}
+              </NavLink>
+            );
+          })}
+          <div className="layout__row "></div>
         </div>
       </div>
-      <div className="layout__column">
-        <div className="layout__row layout__row--content">ABOUT</div>
-        {right.map((name, i) => {
-          return (
-            <NavLink
-              to={name}
-              onMouseOut={onMouseOut}
-              onMouseOver={() => onMouseOverRight(i)}
-              key={name}
-              className="layout__row layout__row--content"
-            >
-              {name}
-            </NavLink>
-          );
-        })}
-        <div className="layout__row "></div>
-      </div>
-    </div>
+    </>
   );
 };
 

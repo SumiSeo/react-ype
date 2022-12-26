@@ -47,7 +47,6 @@
       font-size: 1.1rem;
       font-weight: 400;
       border-bottom: 1px solid $default_brown_background;
-      cursor: pointer;
       text-decoration: none;
       color: $default_brown_background;
       &:hover {
@@ -56,6 +55,7 @@
         transition: 0.3s ease-in-out;
       }
     }
+
     &--footer {
       white-space: nowrap;
       overflow: hidden;
