@@ -17,6 +17,7 @@ const JavascriptComp = () => {
     <>
       <h1 className="block__link">
         <a
+          className="block__title"
           rel="noreferrer"
           target="_blank"
           href="https://sumiseo.github.io/mfm/"
