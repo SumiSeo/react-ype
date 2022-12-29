@@ -1,4 +1,3 @@
-import React from "react";
 import "../scss/main.scss";
 import {
   createBrowserRouter,
@@ -7,7 +6,6 @@ import {
   Route,
 } from "react-router-dom";
 import Layout from "../Layout/Layout";
-import LoadingComp from "../LoadingComp/LoadingComp";
 import LinkedInComp from "../LinkedInComp/LinkedInComp";
 import GitHubComp from "../GitHubComp/GitHubComp";
 import DefaultComp from "../DefaultComp/DefaultComp";
