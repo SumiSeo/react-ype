@@ -1,7 +1,7 @@
 @import "../scss/variables.scss";
 
 .about {
-  width: 100%;
+  width: 80%;
   height: 100vh;
   background-color: $default_brown_background;
   position: absolute;
@@ -10,7 +10,29 @@
   right: 0;
   padding: 2rem;
   animation: biggerBox 0.4s ease-in-out forwards;
+  color: black;
   &__column {
+    &:first-child {
+      margin-bottom: 1.7rem;
+      font-size: 3.3rem;
+      font-weight: 600;
+      //   color: black;
+    }
+    &:not(:first-child) {
+      padding-right: 3rem;
+      margin-bottom: 4rem;
+    }
+  }
+  &__title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+    text-transform: uppercase;
+  }
+  &__description {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6rem;
   }
 }
 
