@@ -7,6 +7,7 @@
   top: 50%;
   left: 50%;
   z-index: 100;
+  cursor: pointer;
 
   a {
     font-size: 1.5rem;
@@ -39,6 +40,7 @@
       text-align: left;
       font-family: inherit;
       white-space: pre-wrap;
+      cursor: pointer;
     }
   }
   &__disappear {
