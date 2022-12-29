@@ -47,7 +47,7 @@ const Layout = (): JSX.Element => {
         setRight(["#5", "#4", "Javascript", "#2", "#1"]);
         break;
       case 3:
-        setRight(["#5", "#4", "#3", "TypeScript", "#1"]);
+        setRight(["#5", "#4", "#3", "TypeScript&NextJS", "#1"]);
         break;
       case 4:
         setRight(["#5", "#4", "#3", "#2", "React"]);

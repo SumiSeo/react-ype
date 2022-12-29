@@ -30,7 +30,7 @@ const router = createBrowserRouter(
       <Route path="/Scss" element={<SCSSComp />} />
       <Route path="/React" element={<ReactComp />} />
       <Route path="/JavaScript&RestAPI" element={<RestAPIComp />} />
-      <Route path="/Typescript" element={<TypescriptComp />} />
+      <Route path="/Typescript&NextJS" element={<TypescriptComp />} />
       <Route path="/Flutter" element={<FlutterComp />} />
     </Route>
   )
