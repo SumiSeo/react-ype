@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import "./Layout.scss";
+import AboutComp from "../AboutComp/AboutComp";
 
 const Layout = (): JSX.Element => {
   const [right, setRight] = useState<string[]>(["#5", "#4", "#3", "#2", "#1"]);
@@ -93,7 +94,9 @@ const Layout = (): JSX.Element => {
           </div>
         </div>
         <div className="layout__column">
-          <div className="layout__row layout__row--content">ABOUT</div>
+          <div className="layout__row layout__row--content">
+            <AboutComp />
+          </div>
           {right.map((name, i) => {
             return (
               <NavLink
