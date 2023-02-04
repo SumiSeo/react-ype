@@ -26,27 +26,25 @@ const AboutComp = (): JSX.Element => {
           </div>
           <div className="about__column">
             <div className="about__box about__title">
+              Fluuent, 2023.02 ~ Present
+            </div>
+            <div className="about__box about__description">
+              <p>1. Frontend Developer</p>
+            </div>
+          </div>
+          <div className="about__column">
+            <div className="about__box about__title">
               Favorite Medium, 2021.10 ~ 2022.11
             </div>
             <div className="about__box about__description">
+              <p>1. Software Engineer</p>
               <p>
-                1. Develop real-time dashboard with React, TypesScript,
+                2. Develop real-time dashboard with React, TypesScript,
                 GraphQL-Hasura, and AWS
               </p>
               <p>
-                2. Contribute to develop the application from R&D phase to
+                3. Contribute to develop the application from R&D phase to
                 production phase
-              </p>
-              <p>
-                3. Optimization of code quality, bug tracking and correction
-              </p>
-              <p>
-                4. Build mobile application with OOP programming patterns using
-                Flutter-GetX Pattern
-              </p>
-              <p>
-                5. Using diverse collaboration tool with geologically
-                distributed team : GitHub, Swagger and Jira
               </p>
             </div>
           </div>
@@ -55,7 +53,7 @@ const AboutComp = (): JSX.Element => {
               Mazars in Korea, 2020.12 ~ 2021.04
             </div>
             <div className="about__box about__description">
-              <p>1. Marketing & Communication internship at Mazars</p>
+              <p>1. Marketing & Communication Intern</p>
             </div>
           </div>
           <div className="about__column">
@@ -63,12 +61,12 @@ const AboutComp = (): JSX.Element => {
               Korea National University of Arts, 2013.03 ~ 2018.02
             </div>
           </div>
-          <div className="about__column">
+          {/* <div className="about__column">
             <div className="about__box about__title">Contact</div>
             <div className="about__box about__description">
               <p>equepem@gmail.com</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     ) : (
